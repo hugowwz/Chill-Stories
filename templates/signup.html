@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../static/icon/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Chill Stories | Signup</title>
+</head>
+<body>
+    <div class="login">
+        <form class="form" action="" method = "POST">
+           <center><h1 class="h1-logo">Chill Stories</h1>
+            <div class="error" style="display: inline-block; margin-bottom: 20px; color: red; font-family: Arial, Helvetica, sans-serif;">
+                {{ error }}
+            </div>
+            <br>
+            <form action="../database.db">
+                <input class="input_type" type="email" name="email" placeholder="Ex : email@exemple.com">
+                <br>
+                <input class="input_type" type="text" name="username" placeholder="Ex : user_name">
+                <br>
+                <input class="input_type" type="password" name="password" placeholder="Ex : password">
+                <br>
+                <input class="input_submit" type="submit" name="submit" id="submit" value="SIGN UP">
+            </form>
+            <br><br>
+            <a href ="{{url_for('login')}}">Login Here</a></center>
+        </div>
+    </div>
+    <!-- <div class="a" style="padding: 50px; position: absolute; top: 10%; left: 32%; background-color: #3432356b; border-radius: 1rem;"></div>
+    <div class="b" style="padding: 80px; position: absolute; top: 72%; left: 60%; background-color: #3432356b; border-radius: 1rem;"></div>
+    <div class="c" style="padding: 65px; position: absolute; top: 10%; left: 62%; background-color: #3432356b; border-radius: 1rem;"></div> -->
+</body>
+<style>
+    @media screen and (max-width: 1000px) {
+        .a, .b, .c {
+            display: none;
+        }
+    }
+</style>
+</html>

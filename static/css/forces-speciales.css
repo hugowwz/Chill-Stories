@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cont-left {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.video {
+    box-shadow: -1px -1px 50px 1px rgba(255, 255, 255, 0.51);
+    background-color: black;
+}
+
+body {
+    /* background-color: rgb(71, 85, 189); */
+    background-image: url(../films/back/back-adam.jpg);
+    /* backdrop-filter: blur(15px); */
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+.banniere {
+    box-shadow: -1px -1px 50px 1px rgba(255, 255, 255, 0.51);
+}
+
+.descript h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.descript p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+/* .resum {
+    margin: 20px;
+}
+
+.resum h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.resum p {
+    text-align: justify;
+    font-size: 18px;
+} */
+
+.description {
+    width: 80%;
+    margin: auto;
+}
+
+.descript {
+    display: flex;
+    background-color: rgb(55, 49, 49);
+    margin-top: 10px;
+    padding: 35px;
+    padding-bottom: 75px;
+}
+
+footer {
+    background-color: rgb(44, 40, 40);
+    padding-top: 75px;
+    /* padding-right: 300px;
+    padding-left: 300px; */
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 75px;
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(163, 144, 144);
+}
+
+.other {
+    display: flex;
+}
+
+.bottom-link {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.bottom-link ul {
+    list-style-type: none;
+}
+
+.bottom-link a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.818);
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}
+
+.bottom-link h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+}
+
+.bottom-link li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.818);
+}
+
+.cont-left img {
+    max-height: 590px;
+    min-height: 590px;
+}
+
+.banniere2 {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .banniere {
+        display: none;
+    }
+    .video {
+        margin-top: 20px;
+        width: 95%;
+    }
+    .cont-left {
+        padding: 10px;
+    }
+    .banniere2 {
+        display: inline-block;
+        min-height: 900px;
+        max-height: 900px;
+        padding-top: 50px;
+    }
+    .descript h1{
+        font-size: 70px;
+    }
+    .descript p {
+        font-size: 40px;
+    }
+    .description {
+        width: 90%;
+    }
+    footer {
+        display: none;
+    }
+    body {
+        background-image: none;
+        background-color: rgb(55, 49, 49);
+    }
+}

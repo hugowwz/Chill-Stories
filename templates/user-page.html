@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/user-page.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../static/icon/icon.ico">
+    <title>Chill Stories | {{ current_user.username }} board</title>
+</head>
+<body>
+    <div class="navbar-top">
+        <h2 class="h11">Chill Stories | Hello {{ current_user.username }} !</h2>
+        <div class="link">
+            <a href="/home">MENU</a>
+            <a href="{{ url_for('logout')}}">LOGOUT</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navbar-left">
+            <ul>
+                <a href=""><li>Informations personelles (en cours)</li></a>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Your Informations</h2>
+            <p>Username : {{ current_user.username }} </p>
+            <p>Email : {{ current_user.email }} </p>
+        </div>
+    </div>
+</body>
+</html>
+
+ <!-- 
+
+    <a href="{{ url_for('logout')}}">Logout Here</a>
+    <a href="{{ url_for('logout')}}">Logout Here</a>
+
+    <h1>Your speudo : {{ current_user.username }} </h1>
+    <h1>Your email : {{ current_user.email }}</h1>
+
+    <a href="/">Menu</a> -->

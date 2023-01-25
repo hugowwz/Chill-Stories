@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../static/icon/icon.ico">
+    <title>Chill Stories | Hub</title>
+</head>
+<body>
+    <header>
+        <div class="h-header">
+            <h1 class="h11">Chill Stories</h1>
+        </div>
+        <div class="link">
+            <a class="link-a" href="/account">My Account</a>
+        </div>
+    </header>
+    <main>
+
+        <div class="categories">
+            <h1 class="title">Films</h1>
+            <div class="img-ban">
+                <a class="ban" href="/film/adam-a-travers-le-temps"><img class="banniere" src="../static/films/ban/adamatraversletemps.jpg" alt="img"></a>
+                <a class="ban" href="/film/forces-speciales"><img class="banniere" src="../static/films/ban/forces-speciales.jpg" alt="img"></a>
+                <a class="ban" href="/film/aquaman"><img class="banniere" src="../static/films/ban/aquaman.jpg" alt="img"></a>
+                <a class="ban" href="/film/doctor-strange"><img class="banniere" src="../static/films/ban/doctor-strange.jpg" alt="img"></a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <hr style="margin-bottom: 15px;">
+        <div class="bottom-link">
+            <div class="name">
+                <h3>Mentions légales</h3>
+                <ul>
+                    <a href=""><li>Nos développeurs (en cours)</li></a>
+                    <a href=""><li>Nous contacter (en cours)</li></a>
+                    <a href=""><li>Centre d'aide (en cours)</li></a>
+                    <a href=""><li>Conditions d'utilisations (en cours)</li></a>
+                    <a href=""><li>Propositions de modifications (en cours)</li></a>
+                    <a href=""><li>Limite d'âge (en cours)</li></a></li></a>
+                    <a href=""><li>Recrutement (en cours)</li></a>
+                    <a href=""><li>Compte (en cours)</li></a>
+                </ul>
+            </div>
+            <div class="faq">
+                <h3>FAQ</h3>
+                <ul>
+                    <a href="../static/footer/faq/comment-le-site-a-ete-cree.html"><li>Comment le site a été créé ?</li></a>
+                    <a href=""><li>Qui a créé le site ? (en cours)</li></a>
+                    <a href=""><li>Ou est ébergé le site ? (en cours)</li></a>
+                    <a href=""><li>Comment le site et le serveur ont été créé ? (en cours)</li></a>
+                    <li>Comment obtenir un compte premium ? (en cours) (en cours)</li></a>
+                </ul>
+            </div>
+            <div class="account">
+                <h3>Account</h3>
+                <ul>
+                    <a href="{{ url_for('logout')}}"><li>Logout</li></a>
+                    <li>Premium (en cours)</li>
+                </ul>
+            </div>
+            <div class="others">
+                <h3>Others</h3>
+                <ul>
+                    <a href="https://fast.com/fr/"><li>Test de vitesse</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <hr style="margin-bottom: 15px;">
+        <div class="copyright">
+            <p style="margin-bottom: 20px;">&copy; Copyright 2023 - Chill Stories - All Rights Reserved</p>
+            <div class="other">
+                <p style="margin-right: 5px;">Version</p><p style="color: rgba(255, 255, 255, 0.818);">1.0.0</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
